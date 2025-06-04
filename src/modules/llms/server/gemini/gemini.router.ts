@@ -21,7 +21,7 @@ const DEFAULT_GEMINI_HOST = 'https://generativelanguage.googleapis.com';
 
 export function geminiAccess(access: GeminiAccessSchema, modelRefId: string | null, apiPath: string, useV1Alpha: boolean): { headers: HeadersInit, url: string } {
 
-  const geminiHost = fixupHost(access.geminiHost || DEFAULT_GEMINI_HOST, apiPath);
+  const geminiHost = fixupHost(access.geminiHost || env.GEMINI_API_HOST || DEFAULT_GEMINI_HOST, apiPath);
   let geminiKey = access.geminiKey || env.GEMINI_API_KEY || '';
 
   // multi-key with random selection - https://github.com/enricoros/big-AGI/issues/653

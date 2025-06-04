@@ -31,6 +31,7 @@ ANTHROPIC_API_KEY=
 ANTHROPIC_API_HOST=
 DEEPSEEK_API_KEY=
 GEMINI_API_KEY=
+GEMINI_API_HOST=
 GROQ_API_KEY=
 LOCALAI_API_HOST=
 LOCALAI_API_KEY=
@@ -100,6 +101,7 @@ requiring the user to enter an API key
 | `ANTHROPIC_API_HOST`        | Changes the backend host for the Anthropic vendor, to enable platforms such as AWS Bedrock                     | Optional                                                          |
 | `DEEPSEEK_API_KEY`          | The API key for Deepseek AI                                                                                    | Optional                                                          |
 | `GEMINI_API_KEY`            | The API key for Google AI's Gemini                                                                             | Optional                                                          |
+| `GEMINI_API_HOST`           | Changes the backend host for Google AI's Gemini                                               | Optional                                                   |
 | `GROQ_API_KEY`              | The API key for Groq Cloud                                                                                     | Optional                                                          |
 | `LOCALAI_API_HOST`          | Sets the URL of the LocalAI server, or defaults to http://127.0.0.1:8080                                       | Optional                                                          |
 | `LOCALAI_API_KEY`           | The (Optional) API key for LocalAI                                                                             | Optional                                                          |
