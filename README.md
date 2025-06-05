@@ -30,6 +30,10 @@ Note: After the V2 Q1 2025 release, `v2-dev` will become the default branch and 
 
 ### Quick links: 👉 [roadmap](https://github.com/users/enricoros/projects/4/views/2) 👉 [installation](docs/installation.md) 👉 [documentation](docs/README.md)
 
+### Landing page
+
+The root URL now presents a small landing page with links to common destinations. The chat application has moved to `/chat`.
+
 ---
 
 ### 5,000 Commits Milestone · Jan 2025
