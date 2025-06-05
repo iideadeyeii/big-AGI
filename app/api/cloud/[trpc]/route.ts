@@ -2,6 +2,12 @@ import { fetchRequestHandler } from '@trpc/server/adapters/fetch';
 
 import { appRouterCloud } from '~/server/trpc/trpc.router-cloud';
 import { createTRPCFetchContext } from '~/server/trpc/trpc.server';
+import { registerLocalAgiAgents } from '~/server/agents/localAgiAgent';
+import { globalAgentScheduler } from '~/server/agents/agentScheduler';
+
+// initialize agents
+registerLocalAgiAgents();
+globalAgentScheduler.start();
 
 const handlerNodeRoutes = (req: Request) => fetchRequestHandler({
   endpoint: '/api/cloud',
